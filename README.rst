@@ -278,7 +278,7 @@ like this:
       process_accumulated_events(events)
       del events[:]
    coro.close()
-   process_accumulated_events(events)
+   assert len(events) == 0
 
 
 .. _options:
